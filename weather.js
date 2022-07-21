@@ -38,7 +38,7 @@ let geocoding = (searchInput) => {
         minmaxtempDisplay.innerHTML = '';
     }
     else{
-        const geoURL = `http://api.openweathermap.org/geo/1.0/direct?q=${searchInput}&appid=${apikey}`
+        const geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${searchInput}&appid=${apikey}`
         axios.get(geoURL)
         .then(res => {
             getWeather(res.data[0].lat, res.data[0].lon, searchInput)
