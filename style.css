@@ -1,63 +1,96 @@
-.grid-container {
-        
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-    padding: 5px;
-    height: 100%;
-  }
-  .grid-item1{
-  
-      background-color: royalblue;
-      display: grid;
-  }
-  .grid-item{
-  
-  background-color: lightgrey;
-  display: grid;
-  }
-  h1, h3{
-      color: white;
-      font-weight: bolder;
-      margin-top: 25%;
-  }
-  span{
-      color: black;
-      font-weight: bolder;
-  }
-  p{
-      color: white;
-      
-  }
-  li{
-      color: white;
-      
-  }
-  .bdy{
-      margin-left: 20%;
-  }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
-  }
-  #pp{
-      color: black;
-  }
-  #show{
-      color: black;
-      font-size: xx-large;
-  }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
-  }
-  #show2{
-      color: black;
-      font-size: xx-large;
-  }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
-  }
-     
-    
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, #9c00c4, #cc00ff);    
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+header span{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.search-box{
+    margin-top: 100px;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background: #fae4ff;
+    border-bottom: 5px solid #c29e00;
+    color: #8b7200;
+}
+
+.search-box::placeholder{
+    color: #6d6543;
+}
+
+.search-box:focus{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.location{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.location .city{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.location .date{
+    font-size: 20px;
+}
+
+.current{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 2px 2px 3px #493c00f3;
+}
+
+.current .temp{
+    font-size: 100px;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px #493c00f3;
+}
+
+.current .weather{
+    font-size: 40px;
+    font-style: italic;
+}
+
+.current .hi-low{
+    font-size: 30px;
+    font-weight: 400;
+}
